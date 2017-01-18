@@ -1,0 +1,6 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+.idea/
+WelcomeToTheDjango/__pycache__/
+hello/__pycache__/
+hello/migrations/__pycache__/
