@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Hello, {{ pessoa.nome }}, {{ pessoa.sobrenome }}</h1>
+    <h2>Matérias</h2>
+    <ul>
+        {% for materia in materias %}
+            {% if materia != "Cálculo" %}
+                <li>{{ materia }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</body>
+</html>
