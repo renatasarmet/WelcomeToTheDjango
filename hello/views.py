@@ -1,20 +1,11 @@
 from django.shortcuts import render, render_to_response
 from django.shortcuts import HttpResponse
 
+from .models import *
+
 
 # Create your views here.
 def index(request):
-    pessoa = {
-        'nome': 'Marcelo',
-        'sobrenome': 'de Oliveira'
-    }
+    materias = Materia.objects.all()
 
-    materias = [
-        'ED',
-        'CAP',
-        'Cálculo',
-        'Django',
-        "Web"
-    ]
-
-    return render_to_response('hello/index.html', {'pessoa': pessoa, 'materias': materias})
+    return render_to_response('hello/index.html', {'materias': materias})
