@@ -4,3 +4,6 @@ from .models import *
 # Register your models here.
 admin.site.register(Professor)
 admin.site.register(Materia)
+admin.site.register(Sala)
+admin.site.register(Aluno)
+admin.site.register(Curso)
